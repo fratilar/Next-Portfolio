@@ -9,7 +9,9 @@ import { useEffect } from "react";
 function About() {
    const callback = (entries) => {
       entries.forEach((entry) => {
-         if (entry.isIntersecting) entry.target.classList.add("show");
+         if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+         }
       });
    };
 
@@ -48,19 +50,19 @@ function About() {
                <span className="stroke">Tailwind CSS</span>, Stripe, Next Auth and others.
             </p>
             <div className="images absolute top-[10%] left-[12%] grayscale -translate-x-1/2 opacity-0 transition duration-1000">
-               <Image src={about1} width={300} height={350} />
+               <Image src={about1} alt="picture of me" width={300} height={350} />
             </div>
             <div className="images hidden md:block absolute top-[23%] right-[17%] grayscale translate-x-1/2 opacity-0 transition duration-1000">
-               <Image src={about2} width={300} height={400} />
+               <Image src={about2} alt="picture of me" width={300} height={400} />
             </div>
             <div className="images absolute top-[55%] left-[12%] lg:top-[47%] lg:left-[25%] grayscale translate-y-1/2 opacity-0 transition duration-1000">
-               <Image src={about3} width={300} height={380} />
+               <Image src={about3} alt="picture of me" width={300} height={380} />
             </div>
             <div className="images hidden lg:block absolute bottom-[20%] right-[10%] grayscale -translate-x-1/2 opacity-0 transition duration-1000">
-               <Image src={about4} width={330} height={350} />
+               <Image src={about4} alt="picture of me" width={330} height={350} />
             </div>
             <div className="images hidden lg:block absolute bottom-[5%] left-[10%] grayscale translate-x-1/2 opacity-0 transition duration-1000">
-               <Image src={about5} width={420} height={350} />
+               <Image src={about5} alt="picture of me" width={420} height={350} />
             </div>
          </div>
       </section>
