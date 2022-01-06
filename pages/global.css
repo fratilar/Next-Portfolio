@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;400;500;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.stroke {
+   -webkit-text-fill-color: transparent;
+   -webkit-text-stroke-width: 1px;
+}
+
+.animated {
+   animation: round 10s linear infinite;
+}
+
+.show {
+   opacity: 0.6;
+   transform: translate(0, 0);
+}
+
+@keyframes round {
+   0% {
+      transform: rotate(-360deg);
+   }
+   100% {
+      transform: rotate(0deg);
+   }
+}
+
+* {
+   scroll-behavior: smooth;
+}
+
+/* width */
+::-webkit-scrollbar {
+   width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+   background: #161616;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+   background: #fff;
+   border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+   background: #bbe7fe;
+}
