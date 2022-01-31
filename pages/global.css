@@ -15,11 +15,6 @@
    animation: round 10s linear infinite;
 }
 
-.show {
-   opacity: 0.6;
-   transform: translate(0, 0);
-}
-
 @keyframes round {
    0% {
       transform: rotate(-360deg);
@@ -52,4 +47,9 @@
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
    background: #bbe7fe;
+}
+
+.show {
+   opacity: 0.6 !important;
+   transform: translate(0, 0) !important;
 }
