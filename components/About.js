@@ -37,8 +37,8 @@ function About() {
    return (
       <section>
          <div className="lg:h-screen"></div>
-         <div className="relative" id="about">
-            <p className="relative text-xl sm:text-2xl md:text-6xl lg:text-8xl font-jam font-semibold uppercase text-white text-justify px-10 pb-10 tracking-[0.5rem] z-10">
+         <div className="relative min-h-screen" id="about">
+            <p className="relative text-xl sm:text-2xl md:text-6xl lg:text-8xl 2xl:text-9xl font-jam font-semibold uppercase text-white text-justify px-10 pb-10 tracking-[0.5rem] z-10">
                I started learning frontend development in <span className="stroke">2019</span>. Until February 2020, I
                <span className="stroke ml-10">learned on my own</span>, and in March of the same year I started the{" "}
                <span className="stroke">Web Developer</span> course organized by Azimut Vision, which I finished in
@@ -52,7 +52,7 @@ function About() {
             <div className="images absolute top-[10%] left-[12%] grayscale -translate-x-1/2 opacity-0 transition duration-1000">
                <Image src={about1} alt="picture of me" width={300} height={350} />
             </div>
-            <div className="images hidden md:block absolute top-[23%] right-[17%] grayscale translate-x-1/2 opacity-0 transition duration-1000">
+            <div className="images hidden md:block absolute top-[23%] right-[17%] grayscale translate-x-1/3 opacity-0 transition duration-1000">
                <Image src={about2} alt="picture of me" width={300} height={400} />
             </div>
             <div className="images absolute top-[55%] left-[12%] lg:top-[47%] lg:left-[25%] grayscale translate-y-1/2 opacity-0 transition duration-1000">

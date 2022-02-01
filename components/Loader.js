@@ -73,14 +73,17 @@ function Loader() {
          animate="show"
          exit="exit"
       >
-         <motion.div className="w-60 h-14" variants={itemUp} layoutId="logo-id">
+         <motion.div className="w-60 h-14 2xl:w-96 2xl:h-24" variants={itemUp} layoutId="logo-id">
             <Image src={logo} alt="logo image" priority />
          </motion.div>
-         <motion.div className="relative bg-transparent border-2 w-56 h-56 rounded-full mt-10" variants={itemDown}>
+         <motion.div
+            className="relative bg-transparent border-2 w-56 h-56 2xl:w-96 2xl:h-96 rounded-full mt-10"
+            variants={itemDown}
+         >
             <p
                ref={myRef}
                data-set="100"
-               className="text-white font-jam text-4xl absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2"
+               className="text-white font-jam text-4xl 2xl:text-6xl absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2"
             >
                {procent} <span>%</span>
             </p>
